@@ -39,12 +39,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 dark:bg-gray-900 py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-6 text-center">
           Projects
         </h2>
-        <p className="text-lg text-gray-600 mb-10 text-center">
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 text-center">
           Here are some of my favourite projects showcasing my skills and
           expertise.
         </p>
@@ -52,7 +52,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-800 dark:border-gray-700 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={project.image}
@@ -60,17 +60,21 @@ const Projects = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mt-2">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2">
+                  {project.description}
+                </p>
                 <div className="mt-4">
-                  <h4 className="font-medium text-gray-800">Tech Stack:</h4>
+                  <h4 className="font-medium text-gray-800 dark:text-gray-200">
+                    Tech Stack:
+                  </h4>
                   <ul className="flex flex-wrap gap-2 mt-2">
                     {project.techStack.map((tech, i) => (
                       <li
                         key={i}
-                        className="text-sm bg-gray-100 text-gray-800 py-1 px-3 rounded-full shadow-sm"
+                        className="text-sm bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 py-1 px-3 rounded-full shadow-sm"
                       >
                         {tech}
                       </li>
@@ -82,7 +86,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-indigo-600 hover:underline"
+                    className="text-indigo-600 dark:text-indigo-400 hover:underline"
                   >
                     GitHub
                   </a>
@@ -90,7 +94,7 @@ const Projects = () => {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-indigo-600 hover:underline"
+                    className="text-indigo-600 dark:text-indigo-400 hover:underline"
                   >
                     Live Demo
                   </a>

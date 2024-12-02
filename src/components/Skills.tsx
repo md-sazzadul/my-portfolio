@@ -10,10 +10,12 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50  dark:bg-gray-900 py-12">
       <div className="max-w-5xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">Skills</h2>
-        <p className="text-lg text-gray-600 mb-10">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-6">
+          Skills
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-400 mb-10">
           Here's a list of my technical skills and expertise that I bring to
           every project.
         </p>
@@ -21,10 +23,10 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-white shadow-lg p-4 rounded-lg transform hover:scale-105 transition duration-300"
+              className="flex flex-col items-center bg-white dark:bg-gray-800 shadow-lg p-4 rounded-lg transform hover:scale-105 transition duration-300"
             >
               <div className="text-4xl">{skill.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-700 mt-2">
+              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mt-2">
                 {skill.name}
               </h3>
             </div>

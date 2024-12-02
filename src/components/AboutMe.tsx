@@ -1,16 +1,18 @@
 const AboutMe = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-gray-50 dark:bg-gray-900 py-12">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-6 text-center">
           About Me
         </h2>
-        <div className="text-lg text-gray-600 space-y-6 leading-relaxed">
+        <div className="text-lg text-gray-600 dark:text-gray-400 space-y-6 leading-relaxed">
           <p>
             Hi there! I'm{" "}
-            <span className="font-semibold text-indigo-600">Sazzad</span>, a
-            passionate Front-End Developer with a keen eye for detail and a love
-            for building beautiful, user-friendly websites.
+            <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+              Sazzad
+            </span>
+            , a passionate Front-End Developer with a keen eye for detail and a
+            love for building beautiful, user-friendly websites.
           </p>
           <p>
             My journey began with a fascination for the web and its potential to

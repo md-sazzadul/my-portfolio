@@ -22,7 +22,7 @@ function App() {
       <div className="fixed top-4 right-4 z-50">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="bg-indigo-600 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-indigo-700 transition"
+          className="bg-indigo-600 dark:bg-indigo-400 text-white dark:text-gray-800 py-2 px-4 rounded-lg shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-500 transition duration-300"
         >
           {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
