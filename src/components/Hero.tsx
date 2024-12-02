@@ -26,7 +26,7 @@ const Hero = () => {
           href={CV}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-indigo-500 dark:bg-gray-700 dark:text-gray-200 font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-indigo-100 dark:hover:bg-gray-600"
+          className="bg-white text-indigo-500 dark:bg-gray-700 dark:text-gray-200 font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-indigo-100 dark:hover:bg-gray-600 transform hover:scale-105 transition-all duration-300"
         >
           Download Resume
         </a>
@@ -34,7 +34,7 @@ const Hero = () => {
           href="https://github.com/md-sazzadul"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-transparent border-2 border-white dark:border-gray-500 py-2 px-6 rounded-lg font-semibold hover:bg-white hover:text-indigo-500 dark:hover:bg-gray-600 dark:hover:text-gray-300"
+          className="bg-transparent border-2 border-white dark:border-gray-500 py-2 px-6 rounded-lg font-semibold hover:bg-white hover:text-indigo-500 dark:hover:bg-gray-600 dark:hover:text-gray-300 transform hover:scale-105 transition-all duration-300"
         >
           GitHub
         </a>
@@ -42,7 +42,7 @@ const Hero = () => {
           href="https://www.linkedin.com/in/md-sazzadul-islam15/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-transparent border-2 border-white dark:border-gray-500 py-2 px-6 rounded-lg font-semibold hover:bg-white hover:text-indigo-500 dark:hover:bg-gray-600 dark:hover:text-gray-300"
+          className="bg-transparent border-2 border-white dark:border-gray-500 py-2 px-6 rounded-lg font-semibold hover:bg-white hover:text-indigo-500 dark:hover:bg-gray-600 dark:hover:text-gray-300 transform hover:scale-105 transition-all duration-300"
         >
           LinkedIn
         </a>

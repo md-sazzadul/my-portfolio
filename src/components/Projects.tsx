@@ -86,7 +86,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-indigo-600 dark:text-indigo-400 hover:underline"
+                    className="text-indigo-600 dark:text-indigo-400 hover:underline transform hover:scale-105 transition-all duration-300"
                   >
                     GitHub
                   </a>
@@ -94,7 +94,7 @@ const Projects = () => {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-indigo-600 dark:text-indigo-400 hover:underline"
+                    className="text-indigo-600 dark:text-indigo-400 hover:underline transform hover:scale-105 transition-all duration-300"
                   >
                     Live Demo
                   </a>

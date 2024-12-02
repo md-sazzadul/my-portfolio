@@ -64,7 +64,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transition duration-300"
+                className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transform hover:scale-105 transition-all duration-300"
               >
                 Send Message
               </button>
@@ -82,7 +82,7 @@ const Contact = () => {
                   href="https://github.com/md-sazzadul"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-2"
+                  className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-2 transform hover:scale-105 transition-all duration-300"
                 >
                   <span>🐙</span>
                   <span>GitHub</span>
@@ -93,7 +93,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/md-sazzadul-islam15/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-2"
+                  className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-2 transform hover:scale-105 transition-all duration-300"
                 >
                   <span>🔗</span>
                   <span>LinkedIn</span>
@@ -102,7 +102,7 @@ const Contact = () => {
               <li>
                 <a
                   href="mailto:md.sazzadul.islam15@gmail.com"
-                  className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-2"
+                  className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center space-x-2 transform hover:scale-105 transition-all duration-300"
                 >
                   <span>✉️</span>
                   <span>md.sazzadul.islam15@gmail.com</span>
