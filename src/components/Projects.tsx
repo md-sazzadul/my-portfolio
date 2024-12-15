@@ -52,18 +52,18 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 dark:border-gray-700 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="flex flex-col bg-white dark:bg-gray-800 dark:border-gray-700 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transform hover:scale-105 transition-all duration-300 h-full"
             >
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover transition-all duration-300"
               />
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mt-2">
+                <p className="text-gray-600 dark:text-gray-400 mt-2 flex-grow h-16">
                   {project.description}
                 </p>
                 <div className="mt-4">
@@ -81,7 +81,8 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-6 flex justify-between">
+                <div className="flex-grow"></div>
+                <div className="mt-6 flex justify-between items-center">
                   <a
                     href={project.github}
                     target="_blank"
