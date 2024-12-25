@@ -1,12 +1,14 @@
+import Luxex01 from "../assets/luxex-01.jpg";
+
 const projects = [
   {
-    title: "Personal Finance Dashboard",
+    title: "Luxex - Luxury E-Commerce Website",
     description:
-      "A responsive dashboard to track income, expenses, and savings with interactive charts.",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-    image: "/assets/finance-dashboard.png", // Replace with your project image
-    github: "https://github.com/yourusername/finance-dashboard",
-    liveDemo: "https://finance-dashboard-demo.com",
+      "Luxex is a modern and elegant e-commerce website template designed for luxury brands. This project features a responsive design, interactive product listings, and a clean, user-friendly interface. The template includes multiple pages such as Home, About, and Contact, all styled to reflect the high-end nature of luxury products.",
+    techStack: ["HTML5", "CSS3", "JavaScript (ES6)"],
+    image: Luxex01,
+    github: "https://github.com/md-sazzadul/luxex",
+    liveDemo: "https://md-sazzadul.github.io/luxex/",
   },
   {
     title: "E-commerce Website",
@@ -58,6 +60,7 @@ const Projects = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover transition-all duration-300"
+                loading="lazy"
               />
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
