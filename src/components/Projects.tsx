@@ -1,4 +1,5 @@
 import Luxex01 from "../assets/luxex-01.jpg";
+import WeatherDashboard01 from "../assets/weather-dashboard-01.jpg";
 
 const projects = [
   {
@@ -11,13 +12,18 @@ const projects = [
     liveDemo: "https://md-sazzadul.github.io/luxex/",
   },
   {
-    title: "E-commerce Website",
+    title: "Weather Dashboard",
     description:
-      "A fully functional e-commerce website with product listing, filtering, and cart functionality.",
-    techStack: ["React", "Redux", "Tailwind CSS", "Node.js"],
-    image: "/assets/ecommerce.png",
-    github: "https://github.com/yourusername/ecommerce-website",
-    liveDemo: "https://ecommerce-demo.com",
+      "Weather Dashboard is a web application built with React, Vite, and Tailwind CSS that provides real-time weather information. It allows users to search for weather conditions, save favorite locations, and view detailed forecasts. The app features a sleek, responsive design and an intuitive user interface for an enhanced weather-checking experience.",
+    techStack: [
+      "React with Vite",
+      "React Context API",
+      "Tailwind CSS",
+      "JavaScript (ES6+)",
+    ],
+    image: WeatherDashboard01,
+    github: "https://github.com/md-sazzadul/weather-dashboard",
+    liveDemo: "https://weather-dashboard-sazzad15.vercel.app/",
   },
   {
     title: "Portfolio Website",
