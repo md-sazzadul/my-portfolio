@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { lazy, Suspense, useEffect, useState } from "react";
+
+const AboutMe = lazy(() => import("./components/AboutMe"));
+const Contact = lazy(() => import("./components/Contact"));
+const Hero = lazy(() => import("./components/Hero"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,11 +28,13 @@ function App() {
           {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
       </div>
-      <Hero />
-      <Skills />
-      <Projects />
-      <AboutMe />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Hero />
+        <Skills />
+        <Projects />
+        <AboutMe />
+        <Contact />
+      </Suspense>
     </div>
   );
 }

@@ -1,11 +1,13 @@
+import CineRental01 from "../assets/cinerental-01.jpg";
 import Luxex01 from "../assets/luxex-01.jpg";
+import TicTacToe01 from "../assets/tic-tac-toe-01.jpg";
 import WeatherDashboard01 from "../assets/weather-dashboard-01.jpg";
 
 const projects = [
   {
     title: "Luxex - Luxury E-Commerce Website",
     description:
-      "Luxex is a modern and elegant e-commerce website template designed for luxury brands. This project features a responsive design, interactive product listings, and a clean, user-friendly interface. The template includes multiple pages such as Home, About, and Contact, all styled to reflect the high-end nature of luxury products.",
+      "A modern and elegant e-commerce website template designed for luxury brands. This project features a responsive design, interactive product listings, and a clean, user-friendly interface. The template includes multiple pages such as Home, About, and Contact, all styled to reflect the high-end nature of luxury products.",
     techStack: ["HTML5", "CSS3", "JavaScript (ES6)"],
     image: Luxex01,
     github: "https://github.com/md-sazzadul/luxex",
@@ -14,7 +16,7 @@ const projects = [
   {
     title: "Weather Dashboard",
     description:
-      "Weather Dashboard is a web application built with React, Vite, and Tailwind CSS that provides real-time weather information. It allows users to search for weather conditions, save favorite locations, and view detailed forecasts. The app features a sleek, responsive design and an intuitive user interface for an enhanced weather-checking experience.",
+      "A web application built with React, Vite, and Tailwind CSS that provides real-time weather information. It allows users to search for weather conditions, save favorite locations, and view detailed forecasts. The app features a sleek, responsive design and an intuitive user interface for an enhanced weather-checking experience.",
     techStack: [
       "React with Vite",
       "React Context API",
@@ -26,22 +28,36 @@ const projects = [
     liveDemo: "https://weather-dashboard-sazzad15.vercel.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Tic Tac Toe Game",
     description:
-      "An elegant portfolio website to showcase projects and skills with smooth animations.",
-    techStack: ["React", "Tailwind CSS", "Framer Motion"],
-    image: "/assets/portfolio.png",
-    github: "https://github.com/yourusername/portfolio",
-    liveDemo: "https://portfolio-demo.com",
+      "An interactive Tic Tac Toe game built with React, TypeScript, and Tailwind CSS, featuring dynamic player names, game history, dark mode, responsive design, and sound effects for a fun user experience.",
+    techStack: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "ESLint",
+      "LocalStorage",
+      "Audio Effects",
+    ],
+    image: TicTacToe01,
+    github: "https://github.com/md-sazzadul/tic-tac-toe",
+    liveDemo: "https://tic-tac-toe-sazzad15.netlify.app/",
   },
   {
-    title: "Weather App",
+    title: "Cinerental",
     description:
-      "A weather forecast app fetching live data from OpenWeather API with a beautiful UI.",
-    techStack: ["React", "JavaScript", "CSS", "OpenWeather API"],
-    image: "/assets/weather-app.png",
-    github: "https://github.com/yourusername/weather-app",
-    liveDemo: "https://weather-app-demo.com",
+      "A movie rental platform that allows users to browse, search, and rent movies online. It features a responsive design, dark mode, and various functionalities such as cart management, watchlist, and reviews.",
+    techStack: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "React Toastify",
+      "ESLint",
+    ],
+    image: CineRental01,
+    github: "https://github.com/md-sazzadul/cinerental",
+    liveDemo: "https://cinerental-sazzad15.netlify.app/",
   },
 ];
 
