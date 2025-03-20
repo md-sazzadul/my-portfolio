@@ -29,12 +29,6 @@ const AboutMe = () => {
             optimizing for performance, I bring a problem-solving mindset and a
             commitment to excellence to every task.
           </p>
-          <p>
-            Beyond coding, I love exploring new technologies, contributing to
-            open-source projects, and sharing knowledge with the developer
-            community. I also enjoy solving real-world problems with innovative
-            solutions.
-          </p>
           <p className="text-center">
             Let’s connect and create something amazing together!
           </p>
