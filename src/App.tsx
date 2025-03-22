@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const AboutMe = lazy(() => import("./components/AboutMe"));
 const Contact = lazy(() => import("./components/Contact"));
@@ -23,9 +24,13 @@ function App() {
       <div className="fixed top-4 right-4 z-50">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="bg-indigo-600 dark:bg-indigo-400 text-white dark:text-gray-800 py-2 px-4 rounded-lg shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-500 transform hover:scale-105 transition-all duration-300"
+          className="flex items-center justify-center w-14 h-14 bg-indigo-600 dark:bg-indigo-400 text-white dark:text-gray-800 rounded-full shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-500 transform hover:scale-110 transition-all duration-300"
         >
-          {darkMode ? "Light Mode" : "Dark Mode"}
+          {darkMode ? (
+            <FaSun className="text-2xl animate-spin-slow" />
+          ) : (
+            <FaMoon className="text-2xl animate-pulse" />
+          )}
         </button>
       </div>
       <Suspense fallback={<div>Loading...</div>}>
