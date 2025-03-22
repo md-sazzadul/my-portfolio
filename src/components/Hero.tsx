@@ -8,7 +8,7 @@ const Hero = () => {
       <img
         src={Profile}
         alt="Profile"
-        className="relative z-10 w-40 h-40 rounded-full border-4 border-white dark:border-gray-500 shadow-lg mb-6 animate-bounce-slow"
+        className="relative z-10 w-40 h-40 rounded-full border-4 border-white dark:border-gray-500 shadow-lg mb-6"
       />
 
       <h1 className="relative z-10 text-5xl font-fancy mb-4">
